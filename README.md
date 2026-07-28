@@ -1,6 +1,6 @@
 # Housing-Affordability-Shock-Index
 The Housing Affordability Shock: How Europe's Cost of Living Crisis Became a Structural Economic Problem
-# 🏠 Europe Under Pressure — Part 4
+#  Europe Under Pressure (Part 4)
 ## The Housing Affordability Shock Index (HASI)
 
 > *"Real house prices stayed constant for a century — then surged. Rising land prices, not construction costs, explain 80% of the global housing boom."*
@@ -8,7 +8,7 @@ The Housing Affordability Shock: How Europe's Cost of Living Crisis Became a Str
 
 ---
 
-## 📌 What This Project Does
+## What This Project Does
 
 This notebook constructs a **Housing Affordability Shock Index (HASI)** for 16 EU countries and tests whether housing stress predicts unemployment — the fourth instalment of the *Europe Under Pressure* research series.
 
@@ -16,7 +16,7 @@ Housing unaffordability is not just a welfare concern. It is a **structural econ
 
 ---
 
-## 🧠 Theoretical Backbone
+## Theoretical Backbone
 
 | Paper | Key Finding |
 |---|---|
@@ -25,7 +25,7 @@ Housing unaffordability is not just a welfare concern. It is a **structural econ
 
 ---
 
-## 📊 The Index: HASI
+## The Index: HASI
 
 $$\text{HASI}_i = \frac{z(\text{Price-to-Income Ratio}_i) + z(\text{Overburden Rate}_i)}{2}$$
 
@@ -36,13 +36,13 @@ Two equally weighted, z-score normalised components:
 | Price-to-Income Ratio | OECD Analytical House Price Database | HM1.2.1 | 2023 |
 | Housing Cost Overburden Rate | Eurostat EU-SILC | `ilc_lvho07a` | 2023 |
 
-**Price-to-Income Ratio** — nominal house prices ÷ disposable income per head, base 2015=100. A value of 150 means housing became 50% less affordable since 2015.
+**Price-to-Income Ratio**  nominal house prices ÷ disposable income per head, base 2015=100. A value of 150 means housing became 50% less affordable since 2015.
 
-**Overburden Rate** — % of population spending more than 40% of income on housing (EU's official stress threshold).
+**Overburden Rate**  % of population spending more than 40% of income on housing (EU's official stress threshold).
 
 ---
 
-## 🗺️ Visualisations
+##  Visualisations
 
 | Figure | Description | Link |
 |---|---|---|
@@ -52,7 +52,7 @@ Two equally weighted, z-score normalised components:
 
 ---
 
-## 📉 Regression Result
+##  Regression Result
 
 $$\text{Unemployment}_i = \alpha + \beta \cdot \text{HASI}_i + \varepsilon_i$$
 
@@ -66,13 +66,13 @@ The labour mobility trap hypothesis — that housing stress would raise unemploy
 
 ---
 
-## 🌍 Countries in Sample
+## Countries in Sample
 
 Austria · Belgium · Czech Republic · Denmark · Finland · France · Germany · Greece · Hungary · Ireland · Italy · Netherlands · Poland · Portugal · Spain · Sweden
 
 ---
 
-## 🔁 Series Overview
+##  Series Overview
 
 | Part | Shock | Key Paper |
 |---|---|---|
@@ -83,13 +83,13 @@ Austria · Belgium · Czech Republic · Denmark · Finland · France · Germany 
 
 ---
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
 `Python` · `Pandas` · `Statsmodels` · `Plotly` · `Jupyter` · `GitHub Pages`
 
 ---
 
-## 📚 References
+##  References
 
 - Knoll, K., Schularick, M., & Steger, T. (2017). No Price Like Home: Global House Prices, 1870–2012. *American Economic Review*, 107(2), 331–353.
 - IMF (2023). European Housing Markets at a Turning Point. *IMF Working Paper* WP/23/76.
