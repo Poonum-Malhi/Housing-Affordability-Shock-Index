@@ -100,3 +100,38 @@ Austria · Belgium · Czech Republic · Denmark · Finland · France · Germany 
 ---
 
 *Part of the Europe Under Pressure research series — exploring structural economic shocks across the EU.*
+-----
+## Addendum — Panel Extension (July 2026)
+
+The original analysis above tests a single-year cross-section (16 countries, 2023). This addendum
+extends it to a full Eurostat panel to check whether the null result is robust to a larger sample.
+
+### Methodology and a proxy substitution
+
+The original HASI used the OECD price-to-income ratio, which is not readily available as a multi-year
+pull. This extension substitutes the **Eurostat House Price Index** (`prc_hpi_a`) for it, an index of
+the same underlying phenomenon (housing prices outpacing incomes) but not an identical measure. It is
+combined with the same housing cost overburden rate (`ilc_lvho07a`), both z-scored within each year, and
+regressed against unemployment (`une_rt_a`), 15 countries, 2005-2025.
+
+### Results
+
+| Specification | Coefficient | p-value | Observations |
+|---|---|---|---|
+| Single-year (2023, updated proxy) | -1.793 | 0.076 | 15 |
+| Pooled OLS, no fixed effects | -0.993 | 0.266 | 243 |
+| Two-way fixed effects panel | -0.415 | 0.541 | 243 |
+
+### Interpretation
+
+As with a companion extension of the China Shock analysis, expanding this sample to 243 country-year
+observations does **not** produce significance, and adding fixed effects moves the result further from
+significance. This is treated as a genuine null result rather than a null that merely reflects
+insufficient statistical power in the original 16-country, single-year sample: the labour-mobility-trap
+hypothesis is not supported even with a much larger panel.
+
+### Data
+
+Eurostat: House Price Index (`prc_hpi_a`, purchase=TOTAL, unit=I15_A_AVG), Housing cost overburden rate
+(`ilc_lvho07a`, total population), Unemployment rate (`une_rt_a`, age 15-74, % of active population),
+2005-2025.
